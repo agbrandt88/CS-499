@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BRANDT - CS 360 - Project Two - Event Tracking App</string>
+    <string name="username">Username</string>
+    <string name="event_tracking_app">Event Tracking App</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Re-Enter Password</string>
+    <string name="AccountCreationPassword">Account Creation Only</string>
+    <string name="login">Login</string>
+    <string name="createAccount">Create Account</string>
+    <string name="eventPage">Event Page</string>
+    <string name="eventPageMessage">Track, update, or delete your upcomming events!</string>
+    <string name="fabDescription">Create Event</string>
+    <string name="eventCardName">Event Name</string>
+    <string name="eventCardDate">Event Date</string>
+    <string name="eventCardTime">Event Time</string>
+    <string name="eventCardDelete">Delete</string>
+    <string name="eventFabName">Event Name</string>
+    <string name="eventFabTitle">Add Event</string>
+    <string name="eventFabNameInput">Add event name</string>
+    <string name="eventFabDate">Event Date</string>
+    <string name="eventFabDateInput">Add date</string>
+    <string name="eventFabTime">Event Time</string>
+    <string name="eventFabTimeInput">Add time</string>
+    <string name="eventFabNotes">Notes</string>
+    <string name="eventFabNotesInput">Add event notes here</string>
+    <string name="eventFabSave">Save</string>
+    <string name="eventFabCancel">Cancel</string>
+    <string name="eventFabNotification">Schedule Reminder</string>
+    <string name="smsTitle">SMS Notifications</string>
+    <string name="smsDescription">Allow Event Tracking App to send SMS event notifications?</string>
+    <string name="smsButtonAllow">Allow</string>
+    <string name="smsButtonDeny">Deny</string>
+</resources>
