@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textCardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eventCardName"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textCardDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eventCardDate" />
+
+        <TextView
+            android:id="@+id/textCardTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eventCardTime"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonCardDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eventCardDelete" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

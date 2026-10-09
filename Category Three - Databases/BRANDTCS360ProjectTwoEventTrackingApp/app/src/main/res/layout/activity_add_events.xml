@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textFabTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/eventFabTitle"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editFabName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textFabName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/eventFabName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editFabDate"
+        app:layout_constraintStart_toStartOf="@+id/editFabName" />
+
+    <EditText
+        android:id="@+id/editFabName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/eventFabNameInput"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintEnd_toEndOf="@+id/editFabDate"
+        app:layout_constraintTop_toBottomOf="@+id/textFabTitle" />
+
+    <TextView
+        android:id="@+id/textFabDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/eventFabDate"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editFabTime"
+        app:layout_constraintTop_toBottomOf="@+id/editFabDate" />
+
+    <EditText
+        android:id="@+id/editFabDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="43dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/eventFabDateInput"
+        android:inputType="datetime|date"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/editFabTime"
+        app:layout_constraintEnd_toEndOf="@+id/editFabTime" />
+
+    <TextView
+        android:id="@+id/textFabTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/eventFabTime"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editFabTime"
+        app:layout_constraintTop_toBottomOf="@+id/editFabTime" />
+
+    <EditText
+        android:id="@+id/editFabTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="286dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/eventFabTimeInput"
+        android:inputType="datetime|time"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textFabEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="@string/eventFabEndTime"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editFabNotes"
+        app:layout_constraintStart_toStartOf="@+id/editFabEndTime" />
+
+    <EditText
+        android:id="@+id/editFabEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/eventFabEndTimeInput"
+        android:inputType="datetime|time"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintStart_toStartOf="@+id/textFabTime"
+        app:layout_constraintTop_toBottomOf="@+id/textFabTime" />
+
+    <TextView
+        android:id="@+id/textFabNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eventFabNotes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editFabNotes"
+        app:layout_constraintTop_toBottomOf="@+id/editFabNotes" />
+
+    <EditText
+        android:id="@+id/editFabNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:height="100dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/eventFabNotesInput"
+        android:inputType="text|textMultiLine"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFabEndTime" />
+
+    <Button
+        android:id="@+id/buttonFabSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="31dp"
+        android:text="@string/eventFabSave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFabCancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFabCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="31dp"
+        android:text="@string/eventFabCancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonFabSave" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/eventFabNotification"
+        app:layout_constraintStart_toStartOf="@+id/textFabNotes"
+        app:layout_constraintTop_toTopOf="@+id/textFabNotes" />
+</androidx.constraintlayout.widget.ConstraintLayout>
